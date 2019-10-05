@@ -7,6 +7,7 @@ import org.springframework.data.domain.PageRequest;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.Optional;
 
 @Service
 public class PersonServiceImpl implements PersonService {
@@ -20,8 +21,8 @@ public class PersonServiceImpl implements PersonService {
     }
 
     @Override
-    public Person getPerson(Long id) {
-        return personRepository.findOne(id);
+    public Optional<Person> getPerson(Long id) {
+        return personRepository.findById(id);
     }
 
     @Override
@@ -36,7 +37,7 @@ public class PersonServiceImpl implements PersonService {
 
     @Override
     public void deletePerson(Long id) {
-        personRepository.delete(id);
+        personRepository.deleteById(id);
     }
 
     @Override

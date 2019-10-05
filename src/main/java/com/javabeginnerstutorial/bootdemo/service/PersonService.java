@@ -3,12 +3,13 @@ package com.javabeginnerstutorial.bootdemo.service;
 import com.javabeginnerstutorial.bootdemo.model.Person;
 
 import java.util.List;
+import java.util.Optional;
 
 public interface PersonService {
 
     Person createPerson(Person person);
 
-    Person getPerson(Long id);
+    Optional<Person> getPerson(Long id);
 
     Person editPerson(Person person);
 
