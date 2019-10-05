@@ -1,0 +1,20 @@
+# Application Config
+server:
+  port : 8081
+
+spring:
+  application:
+    name: JBT-Beginner-Microservice
+  # Eureka Config
+eureka:
+  client:
+    eureka-server-port: 8761
+  instance:
+    health-check-url-path: /manage/health
+    status-page-url-path: /manage/info
+
+management:
+  endpoints:
+    web:
+      base-path: /manage
+
