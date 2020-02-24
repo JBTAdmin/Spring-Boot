@@ -1,4 +1,4 @@
-# Spring-Boot
+# Spring-Boot. (SHUOLD BE INSIDE SPRING-BOOT-WRAPPER)
 Code Example of Spring Boot Application with H2 Embedded DB article written @ https://javabeginnerstutorial.com/spring-boot/making-spring-boot-thymeleaf-crud-application/
 
 This Repository contains code related to Spring Boot Application. Where H2 embedded database is used for storing purpose.
